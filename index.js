@@ -2,7 +2,7 @@
  * A Bot for Slack!
  */
 
-
+require('dotenv').config();
 /**
  * Define a function for initiating a conversation on installation
  * With custom integrations, we don't have a way to find out who installed us, so we can't message them :(
