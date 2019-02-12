@@ -1,0 +1,34 @@
+{
+  "name": "Hibagon",
+  "version": "1.0.0",
+  "description": "The Japanese Yeti.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://https://gitlab.com/jordvaug/hibagon"
+  },
+  "keywords": [
+    "slack",
+    "bot"
+  ],
+  "author": "Jordan Vaughn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/jordvaug/hibagon"
+  },
+  "homepage": "https://gitlab.com/jordvaug/hibagon",
+  "engines": {
+    "node": "5.1.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "botkit": "0.2.2",
+    "botkit-storage-mongo": "^1.0.2",
+    "express": "^4.16.4",
+    "mongodb": "^1.4.39"
+  }
+}
