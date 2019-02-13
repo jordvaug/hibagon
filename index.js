@@ -97,9 +97,17 @@ controller.hears('about', ['direct_message','direct_mention','mention'], functio
 });
 
 controller.hears(['commands','list','all'], ['direct_message','direct_mention','mention'], function (bot, message) {
-    bot.reply(message, 'Here is a list of my current commands: hey, about, ...');
+    bot.reply(message, 'Here is a list of my current commands: hey, about, waiver ...');
 });
 
+controller.hears(['DD214', 'waiver'], ['direct_message','direct_mention','mention'], function (bot, message) {
+    bot.reply(message, 'Are you looking for the DD214s? They are all located here: https://www.dropbox.com/sh/rp1er0wx7lo76et/AADM34Uwc3xIu2GX87dqBpgNa?dl=0' +
+             '/n if that isn\'t what you\'re looking for try typing "list" to see a list of my commands.');
+});
+
+controller.hears(['schedule','events'], ['direct_message','direct_mention','mention'], function (bot, message) {
+    bot.reply(message, 'If you are looking for our upcoming events...');
+});
 
 
 /**
