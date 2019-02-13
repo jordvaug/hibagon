@@ -92,7 +92,7 @@ controller.hears(['hello', 'hi', 'hey'], ['direct_message','direct_mention','men
 });
 
 controller.hears('about', ['direct_message','direct_mention','mention'], function (bot, message) {
-    bot.reply(message, 'Did you want to know more about VetEx? Here is our about section on the website' +
+    bot.reply(message, 'Did you want to know more about VetEx? Here is our about section on the website \n' +
         'https://www.vetexpeditions.com/about/');
 });
 
@@ -101,17 +101,17 @@ controller.hears(['commands','list','all'], ['direct_message','direct_mention','
 });
 
 controller.hears(['DD214', 'waiver'], ['direct_message','direct_mention','mention'], function (bot, message) {
-    bot.reply(message, 'Are you looking for the DD214s? They are all located here: https://www.dropbox.com/sh/rp1er0wx7lo76et/AADM34Uwc3xIu2GX87dqBpgNa?dl=0' +
+    bot.reply(message, 'Are you looking for the DD214s? They are all located here:\n https://www.dropbox.com/sh/rp1er0wx7lo76et/AADM34Uwc3xIu2GX87dqBpgNa?dl=0' +
              '/n if that isn\'t what you\'re looking for try typing "list" to see a list of my commands.');
 });
 
 controller.hears(['schedule','events'], ['direct_message','direct_mention','mention'], function (bot, message) {
     bot.reply(message, 'If you are looking for our upcoming events? if that isn\'t what you\'re looking for try typing "list" to see a list of my commands.'+
-              'https://calendar.google.com/calendar/r?mode=day&date=20181027T225653&pli=1&t=AKUaPmbZO78vO72PZyKurl6bAZWqAOghQnhRlZQSKpHaxtykBUGl8oTISXrMlkZ0XhTZRc8cbQfaTsJ05ffG19n9l3MhI_KBrQ%3D%3D');
+              '\n https://calendar.google.com/calendar/r?mode=day&date=20181027T225653&pli=1&t=AKUaPmbZO78vO72PZyKurl6bAZWqAOghQnhRlZQSKpHaxtykBUGl8oTISXrMlkZ0XhTZRc8cbQfaTsJ05ffG19n9l3MhI_KBrQ%3D%3D');
 });
 
 controller.hears(['signup','sign up', 'reporting'], ['direct_message','direct_mention','mention'], function (bot, message) {
-    bot.reply(message, 'Are you looking for the leaders sign up and reporting form? If not try typing "list".'+
+    bot.reply(message, 'Are you looking for the leaders sign up and reporting form? If not try typing "list". \n'+
               'https://docs.google.com/spreadsheets/d/1CQXf0raXZ9d8H4a5Z8ZG3oAzEqt32UDBlpYh5lHKP8A/edit?ts=5c0352e0#gid=0');
 });
 
