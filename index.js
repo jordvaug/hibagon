@@ -97,7 +97,7 @@ controller.hears('about', ['direct_message','direct_mention','mention'], functio
 });
 
 controller.hears(['commands','list','all'], ['direct_message','direct_mention','mention'], function (bot, message) {
-    bot.reply(message, 'Here is a list of my current commands: hey, about, waiver ...');
+    bot.reply(message, 'Here is a list of my current commands: hey, about, waiver, schedule, signup ...');
 });
 
 controller.hears(['DD214', 'waiver'], ['direct_message','direct_mention','mention'], function (bot, message) {
